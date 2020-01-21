@@ -1,0 +1,17 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WarshipsGame", "WarshipsGame\WarshipsGame.csproj", "{B4D48731-AADD-4B88-AAED-44A63C8B3946}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|anycpu = Debug|anycpu
+		Release|anycpu = Release|anycpu
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B4D48731-AADD-4B88-AAED-44A63C8B3946}.Debug|anycpu.ActiveCfg = Debug|anycpu
+		{B4D48731-AADD-4B88-AAED-44A63C8B3946}.Debug|anycpu.Build.0 = Debug|anycpu
+		{B4D48731-AADD-4B88-AAED-44A63C8B3946}.Release|anycpu.ActiveCfg = Release|anycpu
+		{B4D48731-AADD-4B88-AAED-44A63C8B3946}.Release|anycpu.Build.0 = Release|anycpu
+	EndGlobalSection
+EndGlobal

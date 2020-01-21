@@ -1,0 +1,14 @@
+﻿<Properties StartupConfiguration="{B4D48731-AADD-4B88-AAED-44A63C8B3946}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="WarshipsGame/Program.cs">
+    <Files>
+      <File FileName="WarshipsGame/Program.cs" Line="1" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.WarshipsGame FirstBuild="True" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|anycpu" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
