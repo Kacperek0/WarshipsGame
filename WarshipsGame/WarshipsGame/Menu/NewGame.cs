@@ -112,7 +112,7 @@ namespace WarshipsGame.Menu
                     //Wybór pierwszej koordynaty
                     while (true)
                     {
-                        Console.WriteLine("Please select Y coordinate: ");
+                        Console.WriteLine("Please select X coordinate: ");
                         selectorX = Console.ReadLine();
                         if (int.TryParse(selectorX, out selectionX) && selectionX >= 0 && selectionX < 9)
                         {
@@ -130,11 +130,11 @@ namespace WarshipsGame.Menu
 
                     while (true)
                     {
-                        Console.WriteLine("Please select X coordinate: ");
+                        Console.WriteLine("Please select Y coordinate: ");
                         selectorY = Console.ReadLine();
                         if (int.TryParse(selectorY, out selectionY) && selectionY >= 0 && selectionY < 10)
                         {
-                            Console.WriteLine("You have successfully selected {1},{0}", selectionY, selectionX);
+                            Console.WriteLine("You have successfully selected {0},{1}", selectionX, selectionY);
                             break;
                         }
                         else
@@ -144,10 +144,10 @@ namespace WarshipsGame.Menu
                     }
 
 
-                    if (playerBoard[selectionX, selectionX] != "S" && playerBoard[selectionX + 1, selectionY] != "S")
+                    if (playerBoard[selectionY, selectionX] != "S" && playerBoard[selectionY + 1, selectionX] != "S")
                     {
-                        playerBoard[selectionX, selectionY] = "S";
-                        playerBoard[selectionX + 1, selectionY] = "S";
+                        playerBoard[selectionY, selectionX] = "S";
+                        playerBoard[selectionY + 1, selectionX] = "S";
                         break;
                     }
                     else
@@ -169,7 +169,7 @@ namespace WarshipsGame.Menu
                     //Wybór pierwszej koordynaty
                     while (true)
                     {
-                        Console.WriteLine("Please select Y coordinate: ");
+                        Console.WriteLine("Please select X coordinate: ");
                         selectorX = Console.ReadLine();
                         if (int.TryParse(selectorX, out selectionX) && selectionX >= 0 && selectionX < 10)
                         {
@@ -187,11 +187,11 @@ namespace WarshipsGame.Menu
 
                     while (true)
                     {
-                        Console.WriteLine("Please select X coordinate: ");
+                        Console.WriteLine("Please select Y coordinate: ");
                         selectorY = Console.ReadLine();
                         if (int.TryParse(selectorY, out selectionY) && selectionY >= 0 && selectionY < 9)
                         {
-                            Console.WriteLine("You have successfully selected {1},{0}", selectionY, selectionX);
+                            Console.WriteLine("You have successfully selected {0},{1}", selectionX, selectionY);
                             break;
                         }
                         else
@@ -202,10 +202,10 @@ namespace WarshipsGame.Menu
 
 
 
-                    if (playerBoard[selectionX, selectionX] != "S" && playerBoard[selectionX, selectionY + 1] != "S")
+                    if (playerBoard[selectionY, selectionX] != "S" && playerBoard[selectionY, selectionX + 1] != "S")
                     {
-                        playerBoard[selectionX, selectionY] = "S";
-                        playerBoard[selectionX, selectionY + 1] = "S";
+                        playerBoard[selectionY, selectionX] = "S";
+                        playerBoard[selectionY, selectionX + 1] = "S";
                         break;
                     }
                     else
@@ -227,7 +227,7 @@ namespace WarshipsGame.Menu
                     //Wybór pierwszej koordynaty
                     while (true)
                     {
-                        Console.WriteLine("Please select Y coordinate: ");
+                        Console.WriteLine("Please select X coordinate: ");
                         selectorX = Console.ReadLine();
                         if (int.TryParse(selectorX, out selectionX) && selectionX >= 0 && selectionX < 8)
                         {
@@ -243,11 +243,11 @@ namespace WarshipsGame.Menu
                     //Wybór drugiej koordynaty
                     while (true)
                     {
-                        Console.WriteLine("Please select X coordinate: ");
+                        Console.WriteLine("Please select Y coordinate: ");
                         selectorY = Console.ReadLine();
                         if (int.TryParse(selectorY, out selectionY) && selectionY >= 0 && selectionY < 10)
                         {
-                            Console.WriteLine("You have successfully selected {1},{0}", selectionY, selectionX);
+                            Console.WriteLine("You have successfully selected {0},{1}", selectionX, selectionY);
                             break;
                         }
                         else
@@ -256,11 +256,11 @@ namespace WarshipsGame.Menu
                         }
                     }
 
-                    if (playerBoard[selectionX, selectionX] != "S" && playerBoard[selectionX + 1, selectionY] != "S" && playerBoard[selectionX + 2, selectionY] != "S")
+                    if (playerBoard[selectionY, selectionX] != "S" && playerBoard[selectionY + 1, selectionX] != "S" && playerBoard[selectionY + 2, selectionX] != "S")
                     {
-                        playerBoard[selectionX, selectionY] = "S";
-                        playerBoard[selectionX + 1, selectionY] = "S";
-                        playerBoard[selectionX + 2, selectionY] = "S";
+                        playerBoard[selectionY, selectionX] = "S";
+                        playerBoard[selectionY+ 1, selectionX] = "S";
+                        playerBoard[selectionY + 2, selectionX] = "S";
                         break;
                     }
                     else
@@ -282,7 +282,7 @@ namespace WarshipsGame.Menu
                     //Wybór pierwszej koordynaty
                     while (true)
                     {
-                        Console.WriteLine("Please select Y coordinate: ");
+                        Console.WriteLine("Please select X coordinate: ");
                         selectorX = Console.ReadLine();
                         if (int.TryParse(selectorX, out selectionX) && selectionX >= 0 && selectionX < 10)
                         {
@@ -298,11 +298,11 @@ namespace WarshipsGame.Menu
                     //Wybór drugiej koordynaty
                     while (true)
                     {
-                        Console.WriteLine("Please select X coordinate: ");
+                        Console.WriteLine("Please select Y coordinate: ");
                         selectorY = Console.ReadLine();
                         if (int.TryParse(selectorY, out selectionY) && selectionY >= 0 && selectionY < 8)
                         {
-                            Console.WriteLine("You have successfully selected {1},{0}", selectionY, selectionX);
+                            Console.WriteLine("You have successfully selected {0},{1}", selectionX, selectionY);
                             break;
                         }
                         else
@@ -311,11 +311,12 @@ namespace WarshipsGame.Menu
                         }
                     }
 
-                    if (playerBoard[selectionX, selectionX] != "S" && playerBoard[selectionX, selectionY + 1] != "S" && playerBoard[selectionX, selectionY + 2] != "S")
+
+                    if (playerBoard[selectionY, selectionX] != "S" && playerBoard[selectionY, selectionX + 1] != "S" && playerBoard[selectionY, selectionX + 2] != "S")
                     {
-                        playerBoard[selectionX, selectionY] = "S";
-                        playerBoard[selectionX, selectionY + 1] = "S";
-                        playerBoard[selectionX, selectionY + 2] = "S";
+                        playerBoard[selectionY, selectionX] = "S";
+                        playerBoard[selectionY, selectionX + 1] = "S";
+                        playerBoard[selectionY, selectionX + 2] = "S";
                         break;
                     }
                     else
@@ -337,7 +338,7 @@ namespace WarshipsGame.Menu
                     //Wybór pierwszej koordynaty
                     while (true)
                     {
-                        Console.WriteLine("Please select Y coordinate: ");
+                        Console.WriteLine("Please select X coordinate: ");
                         selectorX = Console.ReadLine();
                         if (int.TryParse(selectorX, out selectionX) && selectionX >= 0 && selectionX < 7)
                         {
@@ -353,11 +354,11 @@ namespace WarshipsGame.Menu
                     //Wybór drugiej koordynaty
                     while (true)
                     {
-                        Console.WriteLine("Please select X coordinate: ");
+                        Console.WriteLine("Please select Y coordinate: ");
                         selectorY = Console.ReadLine();
                         if (int.TryParse(selectorY, out selectionY) && selectionY >= 0 && selectionY < 10)
                         {
-                            Console.WriteLine("You have successfully selected {1},{0}", selectionY, selectionX);
+                            Console.WriteLine("You have successfully selected {0},{1}", selectionX, selectionY);
                             break;
                         }
                         else
@@ -366,12 +367,12 @@ namespace WarshipsGame.Menu
                         }
                     }
 
-                    if (playerBoard[selectionX, selectionX] != "S" && playerBoard[selectionX + 1, selectionY] != "S" && playerBoard[selectionX + 2, selectionY] != "S" && playerBoard[selectionX + 3, selectionY] != "S")
+                    if (playerBoard[selectionY, selectionX] != "S" && playerBoard[selectionY + 1, selectionX] != "S" && playerBoard[selectionY + 2, selectionX] != "S" && playerBoard[selectionY + 3, selectionX] != "S")
                     {
-                        playerBoard[selectionX, selectionY] = "S";
-                        playerBoard[selectionX + 1, selectionY] = "S";
-                        playerBoard[selectionX + 2, selectionY] = "S";
-                        playerBoard[selectionX + 3, selectionY] = "S";
+                        playerBoard[selectionY, selectionX] = "S";
+                        playerBoard[selectionY + 1, selectionX] = "S";
+                        playerBoard[selectionY + 2, selectionX] = "S";
+                        playerBoard[selectionY + 3, selectionX] = "S";
 
                         break;
                     }
@@ -394,7 +395,7 @@ namespace WarshipsGame.Menu
                     //Wybór pierwszej koordynaty
                     while (true)
                     {
-                        Console.WriteLine("Please select Y coordinate: ");
+                        Console.WriteLine("Please select X coordinate: ");
                         selectorX = Console.ReadLine();
                         if (int.TryParse(selectorX, out selectionX) && selectionX >= 0 && selectionX < 10)
                         {
@@ -410,11 +411,11 @@ namespace WarshipsGame.Menu
                     //Wybór drugiej koordynaty
                     while (true)
                     {
-                        Console.WriteLine("Please select X coordinate: ");
+                        Console.WriteLine("Please select Y coordinate: ");
                         selectorY = Console.ReadLine();
                         if (int.TryParse(selectorY, out selectionY) && selectionY >= 0 && selectionY < 7)
                         {
-                            Console.WriteLine("You have successfully selected {1},{0}", selectionY, selectionX);
+                            Console.WriteLine("You have successfully selected {0},{1}", selectionX, selectionY);
                             break;
                         }
                         else
@@ -423,12 +424,12 @@ namespace WarshipsGame.Menu
                         }
                     }
 
-                    if (playerBoard[selectionX, selectionX] != "S" && playerBoard[selectionX, selectionY + 1] != "S" && playerBoard[selectionX, selectionY + 2] != "S" && playerBoard[selectionX, selectionY + 3] != "S")
+                    if (playerBoard[selectionY, selectionX] != "S" && playerBoard[selectionY, selectionX + 1] != "S" && playerBoard[selectionY, selectionX + 2] != "S" && playerBoard[selectionY, selectionX + 3] != "S")
                     {
-                        playerBoard[selectionX, selectionY] = "S";
-                        playerBoard[selectionX, selectionY + 1] = "S";
-                        playerBoard[selectionX, selectionY + 2] = "S";
-                        playerBoard[selectionX, selectionY + 3] = "S";
+                        playerBoard[selectionY, selectionX] = "S";
+                        playerBoard[selectionY, selectionX + 1] = "S";
+                        playerBoard[selectionY, selectionX + 2] = "S";
+                        playerBoard[selectionY, selectionX + 3] = "S";
                         break;
                     }
                     else
@@ -451,16 +452,16 @@ namespace WarshipsGame.Menu
             SubmarineShipHorizontal("p1", p1Board);
             //czteromasztowiec - poziom
             SubmarineShipVertical("p1", p1Board);
-            //dwa trzymasztowce - poziom
-            DestroyerShipVertical("p1", p1Board);
-            DestroyerShipVertical("p1", p1Board);
             //dwa trzymasztowce - pion
             DestroyerShipHorizontal("p1", p1Board);
             DestroyerShipHorizontal("p1", p1Board);
-            //dwumasztowiec - poziom
-            PatrolShipVertical("p1", p1Board);
+            //dwa trzymasztowce - poziom
+            DestroyerShipVertical("p1", p1Board);
+            DestroyerShipVertical("p1", p1Board);
             //dwumasztowiec - pion
             PatrolShipHorizontal("p1", p1Board);
+            //dwumasztowiec - poziom
+            PatrolShipVertical("p1", p1Board);
 
             Console.WriteLine("\n\nThank you for your selection! Press any key to continue...");
             Console.ReadKey();
@@ -525,7 +526,7 @@ namespace WarshipsGame.Menu
                     selectorY = Console.ReadLine();
                     if (int.TryParse(selectorY, out selectionY) && selectionY >= 0 && selectionY < 10)
                     {
-                        Console.WriteLine("You have successfully selected {1},{0}", selectionY, selectionX);
+                        Console.WriteLine("You have successfully selected {0},{1}", selectionX, selectionY);
                         break;
                     }
                     else
@@ -535,11 +536,11 @@ namespace WarshipsGame.Menu
                 }
 
                 //Strzał
-                if (opponentBoard[selectionX, selectionY] == "S")
+                if (opponentBoard[selectionY, selectionX] == "S")
                 {
                     Console.WriteLine("Hit!");
-                    playerHitboard[selectionX, selectionY] = "H";
-                    playerPoints++;
+                    playerHitboard[selectionY, selectionX] = "H";
+                    playerPoints += 1;
                     if (playerPoints == 24)
                     {
                         winner = true;
@@ -548,7 +549,7 @@ namespace WarshipsGame.Menu
                 else
                 {
                     Console.WriteLine("Miss");
-                    playerHitboard[selectionX, selectionY] = "M";
+                    playerHitboard[selectionY, selectionX] = "M";
                 }
 
                 Console.WriteLine("Next turn. Press any key to continue...");
