@@ -40,10 +40,14 @@ namespace WarshipsGame.Menu
         {
             if (board == "p1")
             {
+                Console.WriteLine("   | 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | ");
+
                 for (int i = 0; i < 10; i++)
                 {
+                    Console.Write(" {0} |", i);
                     for (int j = 0; j < 10; j++)
                     {
+        
                         Console.Write(" {0} |", p1Board[i, j]);
                     }
                     Console.WriteLine();
@@ -51,8 +55,11 @@ namespace WarshipsGame.Menu
             }
             else if (board == "p2")
             {
+                Console.WriteLine("   | 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | ");
+
                 for (int i = 0; i < 10; i++)
                 {
+                    Console.Write(" {0} |", i);
                     for (int j = 0; j < 10; j++)
                     {
                         Console.Write(" {0} |", p2Board[i, j]);
@@ -62,8 +69,11 @@ namespace WarshipsGame.Menu
             }
             else if (board == "p1Hit")
             {
+                Console.WriteLine("   | 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | ");
+
                 for (int i = 0; i < 10; i++)
                 {
+                    Console.Write(" {0} |", i);
                     for (int j = 0; j < 10; j++)
                     {
                         Console.Write(" {0} |", p1Hit[i, j]);
@@ -73,8 +83,11 @@ namespace WarshipsGame.Menu
             }
             else if (board == "p2Hit")
             {
+                Console.WriteLine("   | 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | ");
+
                 for (int i = 0; i < 10; i++)
                 {
+                    Console.Write(" {0} |", i);
                     for (int j = 0; j < 10; j++)
                     {
                         Console.Write(" {0} |", p2Hit[i, j]);
@@ -99,7 +112,7 @@ namespace WarshipsGame.Menu
                     //Wybór pierwszej koordynaty
                     while (true)
                     {
-                        Console.WriteLine("Please select X coordinate: ");
+                        Console.WriteLine("Please select Y coordinate: ");
                         selectorX = Console.ReadLine();
                         if (int.TryParse(selectorX, out selectionX) && selectionX >= 0 && selectionX < 9)
                         {
@@ -117,7 +130,7 @@ namespace WarshipsGame.Menu
 
                     while (true)
                     {
-                        Console.WriteLine("Please select Y coordinate: ");
+                        Console.WriteLine("Please select X coordinate: ");
                         selectorY = Console.ReadLine();
                         if (int.TryParse(selectorY, out selectionY) && selectionY >= 0 && selectionY < 10)
                         {
@@ -156,7 +169,7 @@ namespace WarshipsGame.Menu
                     //Wybór pierwszej koordynaty
                     while (true)
                     {
-                        Console.WriteLine("Please select X coordinate: ");
+                        Console.WriteLine("Please select Y coordinate: ");
                         selectorX = Console.ReadLine();
                         if (int.TryParse(selectorX, out selectionX) && selectionX >= 0 && selectionX < 10)
                         {
@@ -174,7 +187,7 @@ namespace WarshipsGame.Menu
 
                     while (true)
                     {
-                        Console.WriteLine("Please select Y coordinate: ");
+                        Console.WriteLine("Please select X coordinate: ");
                         selectorY = Console.ReadLine();
                         if (int.TryParse(selectorY, out selectionY) && selectionY >= 0 && selectionY < 9)
                         {
@@ -214,7 +227,7 @@ namespace WarshipsGame.Menu
                     //Wybór pierwszej koordynaty
                     while (true)
                     {
-                        Console.WriteLine("Please select X coordinate: ");
+                        Console.WriteLine("Please select Y coordinate: ");
                         selectorX = Console.ReadLine();
                         if (int.TryParse(selectorX, out selectionX) && selectionX >= 0 && selectionX < 8)
                         {
@@ -230,7 +243,7 @@ namespace WarshipsGame.Menu
                     //Wybór drugiej koordynaty
                     while (true)
                     {
-                        Console.WriteLine("Please select Y coordinate: ");
+                        Console.WriteLine("Please select X coordinate: ");
                         selectorY = Console.ReadLine();
                         if (int.TryParse(selectorY, out selectionY) && selectionY >= 0 && selectionY < 10)
                         {
@@ -269,7 +282,7 @@ namespace WarshipsGame.Menu
                     //Wybór pierwszej koordynaty
                     while (true)
                     {
-                        Console.WriteLine("Please select X coordinate: ");
+                        Console.WriteLine("Please select Y coordinate: ");
                         selectorX = Console.ReadLine();
                         if (int.TryParse(selectorX, out selectionX) && selectionX >= 0 && selectionX < 10)
                         {
@@ -285,7 +298,7 @@ namespace WarshipsGame.Menu
                     //Wybór drugiej koordynaty
                     while (true)
                     {
-                        Console.WriteLine("Please select Y coordinate: ");
+                        Console.WriteLine("Please select X coordinate: ");
                         selectorY = Console.ReadLine();
                         if (int.TryParse(selectorY, out selectionY) && selectionY >= 0 && selectionY < 8)
                         {
@@ -324,7 +337,7 @@ namespace WarshipsGame.Menu
                     //Wybór pierwszej koordynaty
                     while (true)
                     {
-                        Console.WriteLine("Please select X coordinate: ");
+                        Console.WriteLine("Please select Y coordinate: ");
                         selectorX = Console.ReadLine();
                         if (int.TryParse(selectorX, out selectionX) && selectionX >= 0 && selectionX < 7)
                         {
@@ -340,7 +353,7 @@ namespace WarshipsGame.Menu
                     //Wybór drugiej koordynaty
                     while (true)
                     {
-                        Console.WriteLine("Please select Y coordinate: ");
+                        Console.WriteLine("Please select X coordinate: ");
                         selectorY = Console.ReadLine();
                         if (int.TryParse(selectorY, out selectionY) && selectionY >= 0 && selectionY < 10)
                         {
@@ -381,7 +394,7 @@ namespace WarshipsGame.Menu
                     //Wybór pierwszej koordynaty
                     while (true)
                     {
-                        Console.WriteLine("Please select X coordinate: ");
+                        Console.WriteLine("Please select Y coordinate: ");
                         selectorX = Console.ReadLine();
                         if (int.TryParse(selectorX, out selectionX) && selectionX >= 0 && selectionX < 10)
                         {
@@ -397,7 +410,7 @@ namespace WarshipsGame.Menu
                     //Wybór drugiej koordynaty
                     while (true)
                     {
-                        Console.WriteLine("Please select Y coordinate: ");
+                        Console.WriteLine("Please select X coordinate: ");
                         selectorY = Console.ReadLine();
                         if (int.TryParse(selectorY, out selectionY) && selectionY >= 0 && selectionY < 7)
                         {
@@ -463,16 +476,16 @@ namespace WarshipsGame.Menu
             SubmarineShipHorizontal("p2", p2Board);
             //czteromasztowiec - poziom
             SubmarineShipVertical("p2", p2Board);
-            //dwa trzymasztowce - poziom
-            DestroyerShipVertical("p2", p2Board);
-            DestroyerShipVertical("p2", p2Board);
             //dwa trzymasztowce - pion
             DestroyerShipHorizontal("p2", p2Board);
             DestroyerShipHorizontal("p2", p2Board);
-            //dwumasztowiec - poziom
-            PatrolShipVertical("p2", p2Board);
+            //dwa trzymasztowce - poziom
+            DestroyerShipVertical("p2", p2Board);
+            DestroyerShipVertical("p2", p2Board);
             //dwumasztowiec - pion
             PatrolShipHorizontal("p2", p2Board);
+            //dwumasztowiec - poziom
+            PatrolShipVertical("p2", p2Board);
 
         }
 

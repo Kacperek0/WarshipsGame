@@ -3,7 +3,7 @@
     <Files>
       <File FileName="WarshipsGame/Program.cs" Line="10" Column="39" />
       <File FileName="WarshipsGame/Menu/Exit.cs" />
-      <File FileName="WarshipsGame/Menu/NewGame.cs" Line="479" Column="36" />
+      <File FileName="WarshipsGame/Menu/NewGame.cs" Line="39" Column="44" />
       <File FileName="WarshipsGame/MenuInit.cs" />
     </Files>
     <Pads>

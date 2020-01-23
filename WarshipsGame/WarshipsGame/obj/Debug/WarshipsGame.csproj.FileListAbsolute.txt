@@ -3,3 +3,8 @@
 /Users/Kacper/Documents/Repos/WarshipsGame/WarshipsGame/WarshipsGame/obj/Debug/WarshipsGame.csprojAssemblyReference.cache
 /Users/Kacper/Documents/Repos/WarshipsGame/WarshipsGame/WarshipsGame/obj/Debug/WarshipsGame.exe
 /Users/Kacper/Documents/Repos/WarshipsGame/WarshipsGame/WarshipsGame/obj/Debug/WarshipsGame.pdb
+/Users/kacper.szczepanek/Documents/Repos/WarshipsGame/WarshipsGame/WarshipsGame/bin/Debug/WarshipsGame.exe
+/Users/kacper.szczepanek/Documents/Repos/WarshipsGame/WarshipsGame/WarshipsGame/bin/Debug/WarshipsGame.pdb
+/Users/kacper.szczepanek/Documents/Repos/WarshipsGame/WarshipsGame/WarshipsGame/obj/Debug/WarshipsGame.csprojAssemblyReference.cache
+/Users/kacper.szczepanek/Documents/Repos/WarshipsGame/WarshipsGame/WarshipsGame/obj/Debug/WarshipsGame.exe
+/Users/kacper.szczepanek/Documents/Repos/WarshipsGame/WarshipsGame/WarshipsGame/obj/Debug/WarshipsGame.pdb
