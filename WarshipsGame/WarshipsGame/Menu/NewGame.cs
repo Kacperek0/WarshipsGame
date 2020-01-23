@@ -492,12 +492,12 @@ namespace WarshipsGame.Menu
 
         static void ShootingPhase()
         {
+            //int points = 0;
 
-
-            void PlayerHit(string playerHit, string[,] opponentBoard, string[,] playerHitboard, int playerPoints)
+            void PlayerHit1(string playerHit, string[,] opponentBoard, string[,] playerHitboard)
             {
                 Console.Clear();
-                Console.WriteLine("Your current score: {0}", playerPoints);
+                Console.WriteLine("Your current score: {0}", pointsP1);
                 Console.WriteLine("Here is your shootboard. Good luck Captain!");
                 DrawBoard(playerHit);
 
@@ -540,8 +540,71 @@ namespace WarshipsGame.Menu
                 {
                     Console.WriteLine("Hit!");
                     playerHitboard[selectionY, selectionX] = "H";
-                    playerPoints += 1;
-                    if (playerPoints == 24)
+                    pointsP1++;
+                    if (pointsP1 == 24)
+                    {
+                        winner = true;
+                    }
+                }
+                else
+                {
+                    Console.WriteLine("Miss");
+                    playerHitboard[selectionY, selectionX] = "M";
+                }
+
+                
+                Console.WriteLine("Next turn. Press any key to continue...");
+                Console.ReadKey();
+            }
+
+            void PlayerHit2(string playerHit, string[,] opponentBoard, string[,] playerHitboard)
+            {
+                Console.Clear();
+                Console.WriteLine("Your current score: {0}", pointsP2);
+                Console.WriteLine("Here is your shootboard. Good luck Captain!");
+                DrawBoard(playerHit);
+
+                //Wybór pierwszej koordynaty
+                while (true)
+                {
+                    Console.WriteLine("Please select X coordinate: ");
+                    selectorX = Console.ReadLine();
+                    if (int.TryParse(selectorX, out selectionX) && selectionX >= 0 && selectionX < 10)
+                    {
+                        Console.WriteLine("You have successfully selected {0}", selectionX);
+                        break;
+                    }
+                    else
+                    {
+                        Console.WriteLine("Please try again.");
+                    }
+                }
+
+
+                //Wybór drugiej koordynaty
+
+                while (true)
+                {
+                    Console.WriteLine("Please select Y coordinate: ");
+                    selectorY = Console.ReadLine();
+                    if (int.TryParse(selectorY, out selectionY) && selectionY >= 0 && selectionY < 10)
+                    {
+                        Console.WriteLine("You have successfully selected {0},{1}", selectionX, selectionY);
+                        break;
+                    }
+                    else
+                    {
+                        Console.WriteLine("Please try again.");
+                    }
+                }
+
+                //Strzał
+                if (opponentBoard[selectionY, selectionX] == "S")
+                {
+                    Console.WriteLine("Hit!");
+                    playerHitboard[selectionY, selectionX] = "H";
+                    pointsP2++;
+                    if (pointsP2 == 24)
                     {
                         winner = true;
                     }
@@ -557,9 +620,79 @@ namespace WarshipsGame.Menu
             }
 
             //Gracz pierwszy - tura strzału
-            PlayerHit("p1Hit", p2Board, p1Hit, pointsP1);
+            PlayerHit1("p1Hit", p2Board, p1Hit);
             //Gracz drugi - tura strzału
-            PlayerHit("p2Hit", p1Board, p2Hit, pointsP2);
+            PlayerHit2("p2Hit", p1Board, p2Hit);
+
+
+
+
+            //void PlayerHit(string playerHit, string[,] opponentBoard, string[,] playerHitboard, int playerPoint, out int points)
+            //{
+            //    Console.Clear();
+            //    Console.WriteLine("Your current score: {0}", playerPoint);
+            //    Console.WriteLine("Here is your shootboard. Good luck Captain!");
+            //    DrawBoard(playerHit);
+
+            //    //Wybór pierwszej koordynaty
+            //    while (true)
+            //    {
+            //        Console.WriteLine("Please select X coordinate: ");
+            //        selectorX = Console.ReadLine();
+            //        if (int.TryParse(selectorX, out selectionX) && selectionX >= 0 && selectionX < 10)
+            //        {
+            //            Console.WriteLine("You have successfully selected {0}", selectionX);
+            //            break;
+            //        }
+            //        else
+            //        {
+            //            Console.WriteLine("Please try again.");
+            //        }
+            //    }
+
+
+            //    //Wybór drugiej koordynaty
+
+            //    while (true)
+            //    {
+            //        Console.WriteLine("Please select Y coordinate: ");
+            //        selectorY = Console.ReadLine();
+            //        if (int.TryParse(selectorY, out selectionY) && selectionY >= 0 && selectionY < 10)
+            //        {
+            //            Console.WriteLine("You have successfully selected {0},{1}", selectionX, selectionY);
+            //            break;
+            //        }
+            //        else
+            //        {
+            //            Console.WriteLine("Please try again.");
+            //        }
+            //    }
+
+            //    //Strzał
+            //    if (opponentBoard[selectionY, selectionX] == "S")
+            //    {
+            //        Console.WriteLine("Hit!");
+            //        playerHitboard[selectionY, selectionX] = "H";
+            //        playerPoint++;
+            //        points = playerPoint;
+         
+            //        if (playerPoint == 24)
+            //        {
+            //            winner = true;
+            //        }
+            //    }
+            //    else
+            //    {
+            //        Console.WriteLine("Miss");
+            //        playerHitboard[selectionY, selectionX] = "M";
+            //    }
+
+            //    ref playerPoint;
+            //    Console.WriteLine("Next turn. Press any key to continue...");
+            //    Console.ReadKey();
+            //}
+
+            //PlayerHit("p1Hit", p2Board, p1Hit, pointsP1, out pointsP1);
         }
 
         static void Game()
@@ -576,6 +709,10 @@ namespace WarshipsGame.Menu
             if (pointsP1 > pointsP2)
             {
                 Console.WriteLine("Player 1 has won {0} to {1}!\n Congratulations!\n Your score will be saved to scorebox.", pointsP1, pointsP2);
+            }
+            else if (pointsP1 ==pointsP2)
+            {
+                Console.WriteLine("Wow! It's a draw! But that's very rare :D");
             }
             else
             {
