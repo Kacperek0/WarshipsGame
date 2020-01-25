@@ -19,6 +19,7 @@ namespace WarshipsGame
                             var newGame = new Menu.NewGame();
                             break;
                         case 2:
+                            var Results = new Menu.Results();
                             break;
                         case 3:
                             break;

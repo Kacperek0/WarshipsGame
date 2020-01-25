@@ -1,4 +1,7 @@
 ﻿using System;
+using Amazon.DynamoDBv2;
+using Amazon.DynamoDBv2.Model;
+
 namespace WarshipsGame.Menu
 {
     public class NewGame
@@ -706,18 +709,43 @@ namespace WarshipsGame.Menu
 
         static void Summary()
         {
+            string gameID;
+
+            void DBInput(string GameID, int p1score, int p2score)
+            {
+                var client = new AmazonDynamoDBClient();
+
+                var request = new PutItemRequest
+                {
+                    TableName = "WarshipsScoreboard",
+                    Item = new System.Collections.Generic.Dictionary<string, AttributeValue>
+                {
+                    { "GameID", new AttributeValue { S = GameID} },
+                    { "Player1-score-index", new AttributeValue { N = p1score.ToString()} },
+                    { "Player2-score-index", new AttributeValue { N = p2score.ToString()} }
+                }
+                };
+
+                client.PutItem(request);
+            }
+
+
             if (pointsP1 > pointsP2)
             {
                 Console.WriteLine("Player 1 has won {0} to {1}!\n Congratulations!\n Your score will be saved to scorebox.", pointsP1, pointsP2);
             }
-            else if (pointsP1 ==pointsP2)
+            else if (pointsP1 == pointsP2)
             {
-                Console.WriteLine("Wow! It's a draw! But that's very rare :D");
+                Console.WriteLine("Wow! It's a draw! But that's very rare! \nYour score will be saved to the scorebox.");
             }
             else
             {
                 Console.WriteLine("Player 2 has won {0} to {1}!\n Congratulations!\n Your score will be saved to scorebox.", pointsP2, pointsP1);
             }
+
+            gameID = DateTime.Now.ToString();
+
+            DBInput(gameID, pointsP1, pointsP2);
         }
 
         public NewGame()
