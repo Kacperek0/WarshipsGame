@@ -27,3 +27,4 @@
 /Users/Kacper/Documents/Repos/WarshipsGame/WarshipsGame/WarshipsGame/bin/Debug/AWSSDK.DynamoDBv2.pdb
 /Users/Kacper/Documents/Repos/WarshipsGame/WarshipsGame/WarshipsGame/obj/Debug/WarshipsGame.csproj.CopyComplete
 /Users/Kacper/Documents/Repos/WarshipsGame/WarshipsGame/WarshipsGame/bin/Debug/WarshipsGame.exe.config
+/Users/Kacper/Documents/Repos/WarshipsGame/WarshipsGame/WarshipsGame/bin/Debug/AWSSDK.DynamoDBv2.xml

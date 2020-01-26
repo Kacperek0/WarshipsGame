@@ -22,6 +22,7 @@ namespace WarshipsGame
                             var Results = new Menu.Results();
                             break;
                         case 3:
+                            var rulebook = new Menu.Rulebook();
                             break;
                         case 0:
                             var exit = new Menu.Exit();

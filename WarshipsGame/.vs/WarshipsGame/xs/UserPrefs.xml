@@ -1,12 +1,13 @@
 ﻿<Properties StartupConfiguration="{B4D48731-AADD-4B88-AAED-44A63C8B3946}|Default">
-  <MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workbench ActiveDocument="WarshipsGame/MenuInit.cs">
     <Files>
       <File FileName="WarshipsGame/Program.cs" Line="1" Column="14" />
       <File FileName="WarshipsGame/Menu/Exit.cs" Line="1" Column="1" />
       <File FileName="WarshipsGame/Menu/NewGame.cs" Line="748" Column="24" />
-      <File FileName="WarshipsGame/MenuInit.cs" Line="22" Column="62" />
-      <File FileName="WarshipsGame/Menu/Results.cs" Line="18" Column="38" />
-      <File FileName="WarshipsGame/App.config" Line="3" Column="45" />
+      <File FileName="WarshipsGame/MenuInit.cs" Line="25" Column="64" />
+      <File FileName="WarshipsGame/Menu/Results.cs" />
+      <File FileName="WarshipsGame/App.config" />
+      <File FileName="WarshipsGame/Menu/Rulebook.cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -14,6 +15,7 @@
           <Node name="WarshipsGame" expanded="True">
             <Node name="WarshipsGame" expanded="True">
               <Node name="Menu" expanded="True" />
+              <Node name="MenuInit.cs" selected="True" />
             </Node>
           </Node>
         </State>
