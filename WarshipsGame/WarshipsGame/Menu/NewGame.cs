@@ -711,13 +711,14 @@ namespace WarshipsGame.Menu
         {
             string gameID;
 
+            //Metoda - wysłanie wyniku do bazy noSQL
             void DBInput(string GameID, int p1score, int p2score)
             {
                 var client = new AmazonDynamoDBClient();
 
                 var request = new PutItemRequest
                 {
-                    TableName = "WarshipsScoreboard",
+                    TableName = "WarshipsScores",
                     Item = new System.Collections.Generic.Dictionary<string, AttributeValue>
                 {
                     { "GameID", new AttributeValue { S = GameID} },

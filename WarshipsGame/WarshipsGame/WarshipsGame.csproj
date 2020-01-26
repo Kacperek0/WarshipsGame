@@ -60,7 +60,6 @@
     <Compile Include="Menu\NewGame.cs" />
     <Compile Include="MenuInit.cs" />
     <Compile Include="Menu\Results.cs" />
-    <Compile Include="Menu\Rulebook.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Menu\" />

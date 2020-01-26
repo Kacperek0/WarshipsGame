@@ -1,13 +1,9 @@
 ﻿<Properties StartupConfiguration="{B4D48731-AADD-4B88-AAED-44A63C8B3946}|Default">
   <MonoDevelop.Ide.Workbench ActiveDocument="WarshipsGame/MenuInit.cs">
     <Files>
-      <File FileName="WarshipsGame/Program.cs" Line="1" Column="14" />
       <File FileName="WarshipsGame/Menu/Exit.cs" Line="1" Column="1" />
-      <File FileName="WarshipsGame/Menu/NewGame.cs" Line="748" Column="24" />
-      <File FileName="WarshipsGame/MenuInit.cs" Line="25" Column="64" />
-      <File FileName="WarshipsGame/Menu/Results.cs" />
-      <File FileName="WarshipsGame/App.config" />
-      <File FileName="WarshipsGame/Menu/Rulebook.cs" Line="1" Column="1" />
+      <File FileName="WarshipsGame/Menu/NewGame.cs" Line="729" Column="1" />
+      <File FileName="WarshipsGame/MenuInit.cs" Line="13" Column="77" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">

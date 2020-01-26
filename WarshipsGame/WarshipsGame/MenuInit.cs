@@ -10,7 +10,7 @@ namespace WarshipsGame
             {
                 try
                 {
-                    Console.WriteLine("1. New game \n2. Results history \n3. TBD \n0. Exit\n");
+                    Console.WriteLine("1. New game \n2. Results history \n\n0. Exit\n");
                     ushort menuSecetion = ushort.Parse(Console.ReadLine());
 
                     switch (menuSecetion)
@@ -20,9 +20,6 @@ namespace WarshipsGame
                             break;
                         case 2:
                             var Results = new Menu.Results();
-                            break;
-                        case 3:
-                            var rulebook = new Menu.Rulebook();
                             break;
                         case 0:
                             var exit = new Menu.Exit();
